@@ -3,5 +3,5 @@
 #Элементы списка можно не запрашивать у пользователя, а указать явно, в программе.
 
 My_list = [12, 'Hello', 1.2, -99, ("HaHA", 55), {"its text"}]
-for d in My_list:
+for d, item in My_list:
     print(f'{d} is {type(d)}')

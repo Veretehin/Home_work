@@ -3,8 +3,12 @@
 # При нечетном количестве элементов последний сохранить на своем месте.
 # Для заполнения списка элементов необходимо использовать функцию input().
 
-#my_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-#print(my_list)
+this_list = input('ведите желаемые значения через пробел: ').split()
+for i in range(1, len(this_list), 2):
+    this_list[i - 1], this_list[i] = this_list[i], this_list[i - 1]
+print(this_list)
+
+
 
 
 

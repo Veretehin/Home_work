@@ -7,22 +7,21 @@ seasons_dict = {1: 'Зима', 2: 'Весна', 3: 'Лето', 4: 'Осень'}
 a = seasons_list
 b = seasons_dict
 month = int(input("Введите месяц по номеру: "))
-if month == 1 or month == 2 or month == 12:
+if 3 >= month or month == 12:
     print(a[0])
     print(b[1])
 
-elif month == 3 or month == 4 or month == 5:
+elif 3 < month <= 6:
     print(a[1])
     print(b[2])
 
-elif month == 6 or month == 7 or month == 8:
+elif 6 < month >= 8:
     print(a[2])
     print(b[3])
 
-elif month == 9 or month == 10 or month == 11:
+elif 8 < month >= 11:
     print(a[3])
     print(b[4])
 
 else:
-        print("Такого месяца не существует")
-
+    print("Такого месяца не существует!")
