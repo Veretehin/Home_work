@@ -9,7 +9,7 @@
 
 raiting = [8, 7, 6, 4, 3, 2, 1]
 print(f"Рейтинг : {raiting}")
-u_rate = int(input("Введите число по шкале от 1 до 10, (111 - выход): "))
+u_rate = int(input("Введите число по шкале от 1 до 10, (0 - выход): "))
 while u_rate != 0:
     if u_rate >= 11:
         u_rate = int(input('Неверное значение, введите число от 1 до 10: '))
@@ -19,9 +19,12 @@ while u_rate != 0:
             break
         elif raiting[0] < u_rate:
             raiting.insert(0, u_rate)
+            break
         elif raiting[-1] > u_rate:
             raiting.append(u_rate)
+            break
         elif raiting[el] > u_rate and raiting[el + 1] < u_rate:
             raiting.insert(el + 1, u_rate)
+            break
     print(f"текущий список - {raiting}")
     u_rate = int(input("Введите число: "))
