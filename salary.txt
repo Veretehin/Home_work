@@ -1,0 +1,4 @@
+Pupkin 18000
+Zelepupkin 30000
+Krasnopupkin 19000
+Pupupkin 22000
